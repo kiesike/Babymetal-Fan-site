@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BABYMETAL Fansite | Fox God Archive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <canvas id="metalParticles" aria-hidden="true"></canvas>
+  <div class="cursor-aura" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="website.html" aria-label="BABYMETAL home">
+      <img src="https://p1.hiclipart.com/preview/130/306/494/babymetal-logo-inter-png-clipart.jpg" alt="BABYMETAL logo">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#biography">Biography</a>
+      <a href="#members">Members</a>
+      <a href="#discography">Discography</a>
+      <a href="#happenings">Happenings</a>
+      <a href="#records">Records</a>
+      <a href="#philippines">Philippines</a>
+      <a href="#experience">My Experience</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Unofficial Fan Archive</p>
+        <h1>BABYMETAL</h1>
+        <p>
+          A fan-built information site for the Japanese metal phenomenon: the members,
+          music, timeline, lore, and the personal experience of discovering the Fox God.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#biography">Read the Archive</a>
+          <a class="button ghost" href="#experience">Fan Story</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Current lineup summary">
+        <span>Current Lineup</span>
+        <strong>SU-METAL / MOAMETAL / MOMOMETAL</strong>
+        <p>Vocal, scream, dance, heavy music, and idol precision fused into one stage language.</p>
+      </aside>
+      <div class="stage-eq" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Site highlights">
+      <span>Biography</span>
+      <span>Members</span>
+      <span>Albums</span>
+      <span>Records</span>
+      <span>Philippines</span>
+      <span>Timeline</span>
+      <span>Fan Experience</span>
+      <span>Photo Archive</span>
+    </section>
+
+    <section class="showcase-section" aria-label="BABYMETAL highlights carousel">
+      <div id="metalShowcase" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#metalShowcase" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Live power"></button>
+          <button type="button" data-bs-target="#metalShowcase" data-bs-slide-to="1" aria-label="Metalverse lore"></button>
+          <button type="button" data-bs-target="#metalShowcase" data-bs-slide-to="2" aria-label="Global chapter"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://1.bp.blogspot.com/-CjeYkYhO8iY/U6qG016NoNI/AAAAAAAArUE/iMajgi2VoME/s1600/BABYMETAL+Wallpaper+%E5%A3%81%E7%B4%99+HD+4.jpg" class="d-block w-100" alt="BABYMETAL concert wallpaper">
+            <div class="carousel-caption">
+              <p class="eyebrow">Live Ritual</p>
+              <h2>Metal, dance, lights, and mythology.</h2>
+              <p>A concert identity built to feel like a chapter from the Metalverse.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.mos.cms.futurecdn.net/sVJDWzxTJ2zJBFux4bokZj.jpg" class="d-block w-100" alt="BABYMETAL with Metallica">
+            <div class="carousel-caption">
+              <p class="eyebrow">Global Recognition</p>
+              <h2>From Japan to the biggest metal stages.</h2>
+              <p>BABYMETAL meets METALLICA.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.mos.cms.futurecdn.net/ewszPmyN7FiVbMHahRWSFo.png" class="d-block w-100" alt="BABYMETAL collaboration visual">
+            <div class="carousel-caption">
+              <p class="eyebrow">Metal Forth Era</p>
+              <h2>Collaboration as a superpower.</h2>
+              <p>The newest era connects BABYMETAL with artists across electronicore, deathcore, alt-pop, and global metal.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#metalShowcase" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#metalShowcase" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="split-section" id="biography">
+      <div class="section-kicker">Biography</div>
+      <div class="split-copy reveal">
+        <h2>A band that made contradiction feel like a genre.</h2>
+        <p>
+          BABYMETAL formed in Japan in 2010 with a concept that sounded impossible on paper:
+          idol-pop performance fused with heavy metal. The result became one of modern metal's
+          most recognizable live identities, built around dramatic vocals, synchronized dance,
+          heavy instrumentation, and the mythology of the Fox God.
+        </p>
+        <p>
+          Their current official lineup is SU-METAL, MOAMETAL, and MOMOMETAL. Together they carry
+          the newer era of BABYMETAL, from the restored Metalverse into the global collaboration
+          period represented by <em>METAL FORTH</em>.
+        </p>
+      </div>
+      <div class="fact-stack reveal">
+        <article>
+          <strong>Origin</strong>
+          <span>Tokyo, Japan</span>
+        </article>
+        <article>
+          <strong>Sound</strong>
+          <span>Kawaii metal, J-pop, heavy metal, electronic and arena-rock elements</span>
+        </article>
+        <article>
+          <strong>Fanbase</strong>
+          <span>The One</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section" id="members">
+      <div class="section-header reveal">
+        <p class="eyebrow">Members</p>
+        <h2>The three faces of the current Metalverse.</h2>
+        <p>Click each profile to open a dedicated page with more information and photo space.</p>
+      </div>
+
+      <div class="filter-bar" aria-label="Metalverse filter">
+        <label for="siteSearch">Search Archive</label>
+        <input id="siteSearch" type="search" placeholder="Search SU-METAL, Metal Galaxy, 2025...">
+        <select id="typeFilter" aria-label="Filter by type">
+          <option value="all">All Entries</option>
+          <option value="member">Members</option>
+          <option value="album">Albums</option>
+        </select>
+      </div>
+
+      <div class="member-grid reveal">
+        <a class="member-card filter-item" data-type="member" data-search="su-metal suzuka nakamoto vocal dance leader current member" href="suzuka-nakamoto.html">
+          <img src="https://image.tmdb.org/t/p/w500/nkjThB7Tj58LMr2kRtZWD67929M.jpg" alt="Suzuka Nakamoto">
+          <div>
+            <p>SU-METAL</p>
+            <h3>Suzuka Nakamoto</h3>
+            <span>Vocal and Dance</span>
+          </div>
+        </a>
+        <a class="member-card filter-item" data-type="member" data-search="moametal moa kikuchi scream dance expression current member" href="moa-kikuchi.html">
+          <img src="https://image.tmdb.org/t/p/w500/sqbehKtWLKHCgzZ7RDII0nZ2BiX.jpg" alt="Moa Kikuchi">
+          <div>
+            <p>MOAMETAL</p>
+            <h3>Moa Kikuchi</h3>
+            <span>Scream and Dance</span>
+          </div>
+        </a>
+        <a class="member-card filter-item" data-type="member" data-search="momometal momoko okazaki scream dance official member 2023" href="momoko-okazaki.html">
+          <img src="https://image.tmdb.org/t/p/w500/i0pMeiYbko4W6K0nstGR8wdZW7W.jpg" alt="Momoko Okazaki">
+          <div>
+            <p>MOMOMETAL</p>
+            <h3>Momoko Okazaki</h3>
+            <span>Scream and Dance</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="split-section reversed" id="sound">
+      <div class="section-kicker">Sound Guide</div>
+      <div class="feature-image reveal">
+        <img src="foxsign.png" alt="Fox sign graphic">
+      </div>
+      <div class="split-copy reveal">
+        <h2>What makes BABYMETAL different?</h2>
+        <p>
+          BABYMETAL's identity is contrast. Bright vocal hooks meet blast beats and low-tuned guitars.
+          Dance formations move with metal breakdowns. Mythology turns concerts into chapters.
+        </p>
+        <ul class="clean-list">
+          <li>Heavy riffs and melodic vocal leads</li>
+          <li>Choreography treated as part of the music</li>
+          <li>Live-band power from the Kami Band</li>
+          <li>Fox God lore, dramatic visuals, and ceremonial stage language</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section black-panel" id="discography">
+      <div class="section-header reveal">
+        <p class="eyebrow">Discography</p>
+        <h2>Studio releases and major eras.</h2>
+        <p>Album cards open into detail pages. Cover areas are placeholders so you can add your own selected artwork later.</p>
+      </div>
+
+      <div class="album-grid reveal">
+        <a class="album-card filter-item" data-type="album" data-search="babymetal debut album 2014 gimme chocolate megitsune" href="album-babymetal.html">
+          <img class="album-cover" src="https://coverartarchive.org/release/e5c0f2cc-692c-46e2-af7d-4404c95e1550/front-500" alt="BABYMETAL album cover">
+          <span>2014</span>
+          <h3>BABYMETAL</h3>
+          <p>The debut that defined the band's core fusion.</p>
+        </a>
+        <a class="album-card filter-item" data-type="album" data-search="metal resistance 2016 road of resistance karate the one" href="album-metal-resistance.html">
+          <img class="album-cover" src="https://coverartarchive.org/release/b9145180-6101-4276-a876-1b4ddee5b19f/front-500" alt="Metal Resistance album cover">
+          <span>2016</span>
+          <h3>Metal Resistance</h3>
+          <p>The international breakthrough and arena-metal expansion.</p>
+        </a>
+        <a class="album-card filter-item" data-type="album" data-search="metal galaxy 2019 pa pa ya distortion shanti starlight" href="album-metal-galaxy.html">
+          <img class="album-cover" src="http://coverartarchive.org/release/57cd8f6e-fb6d-471f-8076-5acef2878005/24780670958-500.jpg" alt="Metal Galaxy album cover">
+          <span>2019</span>
+          <h3>Metal Galaxy</h3>
+          <p>A worldwide journey through different metal and pop textures.</p>
+        </a>
+        <a class="album-card filter-item" data-type="album" data-search="the other one 2023 concept album monochrome metal kingdom mirror mirror" href="album-the-other-one.html">
+          <img class="album-cover" src="https://coverartarchive.org/release/17497478-1f42-4746-96c4-a04368bf0e5c/front-500" alt="The Other One album cover">
+          <span>2023</span>
+          <h3>The Other One</h3>
+          <p>A darker concept chapter tied to the restored Metalverse.</p>
+        </a>
+        <a class="album-card filter-item" data-type="album" data-search="metal forth 2025 ratatata song 3 poppy spiritbox slaughter to prevail electric callboy" href="album-metal-forth.html">
+          <img class="album-cover" src="https://coverartarchive.org/release/51db0e0a-423c-41bd-8566-116fd3ca4139/front-500" alt="Metal Forth album cover">
+          <span>2025</span>
+          <h3>Metal Forth</h3>
+          <p>The global collaboration era with MOMOMETAL official.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="happenings-section" id="happenings">
+      <div class="section-header reveal">
+        <p class="eyebrow">Current Happenings</p>
+        <h2>What is happening in the Metalverse now.</h2>
+        <p>Updated as an information block for fans following the newer BABYMETAL cycle.</p>
+      </div>
+      <div class="happenings-grid reveal">
+        <article>
+          <span>June 26, 2026</span>
+          <h3>Metal Forth Deluxe Edition</h3>
+          <p>The deluxe edition expands the <em>Metal Forth</em> era with live tracks and remix material, keeping the 2025 album cycle active into 2026.</p>
+        </article>
+        <article>
+          <span>2026</span>
+          <h3>World Tour Activity</h3>
+          <p>The official schedule lists 2026 dates across Japan, Europe, North America, and Latin America, including festival and arena appearances.</p>
+        </article>
+        <article>
+          <span>2026</span>
+          <h3>Anime Theme Collaboration</h3>
+          <p>BABYMETAL collaborated with Tatsuya Kitani on "Kasuka na Hana", tied to the second season of <em>Hell's Paradise</em>.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-header reveal">
+        <p class="eyebrow">Archive Notes</p>
+        <h2>Fast facts for new fans.</h2>
+      </div>
+      <div class="notes-grid reveal">
+        <article>
+          <span>01</span>
+          <h3>What is kawaii metal?</h3>
+          <p>A fusion of Japanese pop/idol performance and heavy metal, with BABYMETAL as its most famous example.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Who plays the instruments live?</h3>
+          <p>The live instrumentation is performed by the Kami Band, a group of skilled backing musicians.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>What is the Fox God?</h3>
+          <p>The Fox God is part of BABYMETAL's theatrical lore, used to frame announcements, performances, and the band's mythic identity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="records-section" id="records">
+      <div class="section-header reveal">
+        <p class="eyebrow">Records & Milestones</p>
+        <h2>Why BABYMETAL matters beyond the gimmick.</h2>
+        <p>These are the achievements that turned BABYMETAL from viral curiosity into a serious global metal act.</p>
+      </div>
+      <div class="record-wall reveal">
+        <article class="record-card mega">
+          <span data-count="9">No. 9</span>
+          <h3>Billboard 200</h3>
+          <p><em>Metal Forth</em> debuted inside the Top 10 of the Billboard 200 in 2025, a historic U.S. chart moment for an all-Japanese group.</p>
+        </article>
+        <article class="record-card">
+          <span data-count="1">No. 1</span>
+          <h3>Top Rock Albums</h3>
+          <p><em>Metal Galaxy</em> made BABYMETAL the first Asian act to top Billboard's Top Rock Albums chart.</p>
+        </article>
+        <article class="record-card">
+          <span data-count="2016">2016</span>
+          <h3>Wembley Arena</h3>
+          <p>BABYMETAL became the first Japanese act to headline the venue and helped push <em>Metal Resistance</em> into record-setting UK territory.</p>
+        </article>
+        <article class="record-card">
+          <span data-count="15">15</span>
+          <h3>Years Strong</h3>
+          <p>From 2010 to the Metal Forth era, the group has kept evolving while protecting its core identity: metal, dance, mythology, and shock-bright melody.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="history-section" id="history">
+      <div class="section-header reveal">
+        <p class="eyebrow">History</p>
+        <h2>The Metalverse timeline.</h2>
+      </div>
+      <div class="accordion metal-accordion reveal" id="historyAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eraOne" aria-expanded="true" aria-controls="eraOne">2010-2014: Origin and viral breakthrough</button>
+          </h3>
+          <div id="eraOne" class="accordion-collapse collapse show" data-bs-parent="#historyAccordion">
+            <div class="accordion-body">BABYMETAL began in 2010, developing a sound that mixed idol-pop performance with heavy metal. The 2014 self-titled album and "Gimme Chocolate!!" helped introduce them to international listeners.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eraTwo" aria-expanded="false" aria-controls="eraTwo">2015-2017: Metal Resistance goes global</button>
+          </h3>
+          <div id="eraTwo" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+            <div class="accordion-body">The band expanded through international touring, major festival appearances, and the 2016 release of <em>Metal Resistance</em>. Wembley Arena and Tokyo Dome became key symbols of this era.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eraThree" aria-expanded="false" aria-controls="eraThree">2018-2023: Dark side, Metal Galaxy, and restoration</button>
+          </h3>
+          <div id="eraThree" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+            <div class="accordion-body">After Yui Mizuno's departure, BABYMETAL entered darker and more experimental territory. <em>Metal Galaxy</em> widened the sound globally, while <em>The Other One</em> reframed the band through the Metalverse concept.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eraFour" aria-expanded="false" aria-controls="eraFour">2023-present: MOMOMETAL and Metal Forth</button>
+          </h3>
+          <div id="eraFour" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+            <div class="accordion-body">Momoko Okazaki became MOMOMETAL in 2023, completing the current trio. The <em>Metal Forth</em> period emphasizes collaboration, global scenes, and BABYMETAL's continuing reach.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="philippines-section" id="philippines">
+      <div class="section-header reveal">
+        <p class="eyebrow">BABYMETAL x Philippines</p>
+        <h2>The Manila connection.</h2>
+        <p>A focused space for Filipino fans, local memories, and BABYMETAL's connection to the Philippine metal audience.</p>
+      </div>
+      <div class="philippines-grid reveal">
+        <article class="philippines-feature">
+          <span>May 5, 2018</span>
+          <h3>PULP Summer Slam XVIII: Of Good and Evil</h3>
+          <p>BABYMETAL appeared on the PULP Summer Slam 2018 lineup in Manila, placing them directly in front of one of Southeast Asia's loudest metal communities.</p>
+        </article>
+        <article>
+          <h3>Why it matters</h3>
+          <p>For many Filipino fans, festival exposure matters because it connects BABYMETAL to the same scene that supports metal, rock, and alternative acts across Metro Manila.</p>
+        </article>
+        <article>
+          <h3>Fan archive idea</h3>
+          <p>Add your ticket photo, crowd memory, favorite local reaction video, or a short paragraph about what BABYMETAL means to Filipino fans.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+      <div class="section-header reveal">
+        <p class="eyebrow">Personal Experience</p>
+        <h2>My BABYMETAL story.</h2>
+        <p>This section is ready for your own photos, memories, concert notes, favorite songs, or how you discovered the band.</p>
+      </div>
+      <div class="experience-layout reveal">
+        <article class="story-block">
+          <h3>How I Found BABYMETAL</h3>
+          <p>
+            Write your discovery story here: the first song, the first performance video,
+            the moment it clicked, or why the mix of metal and idol performance stood out to you.
+          </p>
+        </article>
+        <div class="experience-photos">
+          <div class="photo-slot">Your Photo 1</div>
+          <div class="photo-slot">Your Photo 2</div>
+          <div class="photo-slot wide">Concert / Memory Photo</div>
+        </div>
+        <article class="story-block red">
+          <h3>Favorite Era</h3>
+          <p>
+            Add your favorite album era, member moments, live clips, merch memories, or playlist recommendations.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="foxsign1.png" alt="Fox sign mark">
+    <p>Unofficial BABYMETAL fansite. Information archive, discography guide, and personal fan page.</p>
+    <p>Not affiliated with BABYMETAL, Amuse, Capitol Records, or the official website.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
